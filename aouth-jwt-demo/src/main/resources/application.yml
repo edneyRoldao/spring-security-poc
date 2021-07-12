@@ -1,0 +1,15 @@
+server:
+  port: 8099
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo_oauth_jwt
+    username: root
+    password: root
+
+app:
+  security:
+    token:
+      secret: b2F1dGhqd3RkZW1v
+      expiration-time: 60 #minutes
+    auth-header: Authorization
